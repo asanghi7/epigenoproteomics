@@ -19,3 +19,5 @@ Imports:
     prob,
     dplyr,
     stats
+URL: https://github.com/asanghi7/epigenoproteomics
+BugReports: https://github.com/asanghi7/epigenoproteomics/issues
