@@ -1,4 +1,6 @@
-#' Calculate protein predictive significance for all genes and their assigned peaks in a linear model test.
+#' Predict protein abundance
+#'
+#' Calculate protein predictive significance for all genes
 #'
 #' @param Peak_annotation A tibble data frame that lists assigned genes to peaks and their status as differential features
 #' @param PeakCount A tibble data frame that lists assigned genes to peaks and their accessibility counts for all samples. Sample columns have the same order as TranscriptCount and ProteinCount
@@ -9,7 +11,6 @@
 #' @return A data frame with Peak annotations and p-value of protein predicitive significance
 #' @examples
 #' predictprotein(data/Peak_annotation.rda,data/PeakCount_NonPromoter.rda,data/TranscriptCount.rda,data/ProteinCount.rda,data/orderSamples.rda,c("1","2"))
-
 predictprotein <- function(Peak_annotation,PeakCount,TranscriptCount,ProteinCount,orderSamples,testSamples){
   PeakGene_lmModel_predict <- c()
   for(p in 1:nrow(Peak_annotation)){

@@ -1,4 +1,6 @@
-#' Calculate paired correlation values (RNA-Protein and RNA-chromatin) for samples randomized to graph group.
+#' Calculate epigenoproteomic correlations
+#'
+#' Calculate epigenoproteomic correlations
 #'
 #' @param Peak_annotation A tibble data frame that lists assigned genes to peaks and their status as differential features
 #' @param PeakCount A tibble data frame that lists assigned genes to peaks and their accessibility counts for all samples. Sample columns have the same order as TranscriptCount and ProteinCount
@@ -9,7 +11,6 @@
 #' @return A data frame with Peak annotations and the RNA-Protein and RNA-chromatin correlations
 #' @examples
 #' graphcorrelation(data/Peak_annotation.rda,data/PeakCount_NonPromoter.rda,data/TranscriptCount.rda,data/ProteinCount.rda,data/orderSamples.rda,c("1","2"))
-
 graphcorrelation <- function(Peak_annotation,PeakCount,TranscriptCount,ProteinCount,orderSamples,graphSamples){
   PeakGene_xor_values <- dplyr::tibble()
   for(p in 1:nrow(Peak_annotation)){

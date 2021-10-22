@@ -2,7 +2,7 @@
 % Please edit documentation in R/predictprotein.R
 \name{predictprotein}
 \alias{predictprotein}
-\title{}
+\title{Predict protein abundance}
 \usage{
 predictprotein(
   Peak_annotation,
@@ -30,7 +30,7 @@ predictprotein(
 
 }
 \description{
-
+Calculate protein predictive significance for all genes
 }
 \examples{
 predictprotein(data/Peak_annotation.rda,data/PeakCount_NonPromoter.rda,data/TranscriptCount.rda,data/ProteinCount.rda,data/orderSamples.rda,c("1","2"))

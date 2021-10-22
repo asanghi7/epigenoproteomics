@@ -2,7 +2,7 @@
 % Please edit documentation in R/randomize.R
 \name{randomize}
 \alias{randomize}
-\title{}
+\title{Randomize samples}
 \usage{
 randomize(orderSamples)
 }
@@ -13,7 +13,7 @@ randomize(orderSamples)
 
 }
 \description{
-
+Randomize samples into two groups
 }
 \examples{
 randomize(c("1","2","3"))

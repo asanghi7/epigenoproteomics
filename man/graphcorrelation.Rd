@@ -2,7 +2,7 @@
 % Please edit documentation in R/graphcorrelation.R
 \name{graphcorrelation}
 \alias{graphcorrelation}
-\title{}
+\title{Calculate epigenoproteomic correlations}
 \usage{
 graphcorrelation(
   Peak_annotation,
@@ -30,7 +30,7 @@ graphcorrelation(
 
 }
 \description{
-
+Calculate epigenoproteomic correlations
 }
 \examples{
 graphcorrelation(data/Peak_annotation.rda,data/PeakCount_NonPromoter.rda,data/TranscriptCount.rda,data/ProteinCount.rda,data/orderSamples.rda,c("1","2"))
